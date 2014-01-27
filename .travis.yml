@@ -2,7 +2,7 @@ language: c
 
 before_script:
     - sudo rm -rf /etc/apt/sources.list.d/*
-    - sudo aptitude update
+    - sudo apt-get update
     - curl -L https://www.opscode.com/chef/install.sh | sudo bash
     - gem install librarian-chef --no-ri --no-rdoc
     - librarian-chef install
